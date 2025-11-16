@@ -12,7 +12,8 @@
 
 /* & This will style the default appearance of the entire webpage */
 body {
-    background-color: #393a60;
+    /* background-color: #393a60; */
+    background-color: #393a62;
     color: #f4f5f1;
     font-family: "Poiret One";
     letter-spacing: 0.1em;
