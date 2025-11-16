@@ -69,7 +69,7 @@ h2 {
 
 /* ~ This will style the horizontal line or dividing line the will follow the title of each section */
 .title-divider {
-    width: 45%;
+    width: 50%;
     height: 10px;
     background: linear-gradient(90deg, #d5ffc0 25%, #d17)no-repeat;
     margin: auto;
