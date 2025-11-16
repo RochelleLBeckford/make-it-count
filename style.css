@@ -1,0 +1,161 @@
+/* & This will import the desired font */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/* & This will style the font for the entire webpage */
+* {
+    /* ~ This will reset the Border Box -> removing the default browser spacing */
+    padding: 0;
+    margin: 0;
+    /* ~ This changes how the element dimensions are calculated -> makess the "width" and "height" include padding and border, instead of adding them on top */
+    box-sizing: border-box;
+}
+
+/* & This will style the default appearance of the entire webpage */
+body {
+    background-color: #393a60;
+    color: #f4f5f1;
+    font-family: "Poiret One";
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+/* & This will style the elements in the header section of the webpage */
+/* ~ This will create a flex container to flex the elements in the header */
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ~ This will style the header images */
+.header-img {
+    width: 215px;
+    height: 215px;
+    border: 5px solid #d5ffc0;
+    padding: 8px;
+}
+
+/* ~ This will style make the <hr> element -> the horizontal line or dividing line to a vertical divider instead of it being horizontal */
+.vertical-divider {
+    width: 8px;
+    height: 200px;
+    background: linear-gradient(#d5ffc0 25%, #d17 75%)no-repeat;
+}
+
+h1 {
+    text-align: center;
+    border: 5px solid #d5ffc0;
+    padding: 8px;
+}
+
+/* ~ This will style the horizontal line or dividing line that will follow each section */
+.section-divider {
+    width: 90%;
+    height: 10px;
+    background: linear-gradient(90deg, #d5ffc0 25%, #d17 75%)no-repeat;
+    margin: auto;
+}
+
+/* & This will style all the elements in the main section of the webpage */
+section {
+    margin-left: 100px;
+    margin-right: 70px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ~ This will style the horizontal line or dividing line the will follow the title of each section */
+.title-divider {
+    width: 45%;
+    height: 10px;
+    background: linear-gradient(90deg, #d5ffc0 25%, #d17)no-repeat;
+    margin: auto;
+}
+
+/* ~ This will style the <li> element marker */
+li {
+    list-style-type: square;
+    margin: auto;
+}
+
+li::marker {
+    font-size: 1.8em;
+    background: linear-gradient(90deg, #d5ffc0 25%, #d17 75%)no-repeat;
+    color: #f6e;
+}
+
+/* li::before {
+    content: "🌸";
+} */
+
+/* & This will style the elements in the "index.html" file */
+/* ~ This will style the main container for the <div> elements */
+#outside-wrapper {
+    width: 90%;
+    background: #540a4b99;
+    text-align: center;
+    /* ~ Adding a margin: auto to center the content */
+    margin: auto;
+}
+
+/* ~ This will style the bridge underpass image */
+#top-img {
+    width: 13em;
+    height: 13em;
+    border: 5px solid #d5ffc0;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#post-list {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+/* ~ This will remove the <li> element marker from the <div> child elements within each <li> parent element */
+#post-list > li {
+    list-style-type: none;
+}
+
+/* ~ This will align the test of the <div> child elements in the <li> parent elementd */
+li > div {
+    text-align: center;
+}
+
+.post-wrapper {
+    width: 90%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* ~ Add padding to the top, right, left, & none to the bottom */
+    padding-top: 50px 50ps 0px 50px;
+}
+
+/* ~ This will style the Library Image */
+.post-img {
+    width: 95%;
+    border: 8px solid #d5ffc0;
+    padding: 10px;
+}
+
+/* ~ This will style all the div elements */
+div {
+    width: 90%;
+    border: 5px solid #fffaf0;
+    padding: 10px;
+}
+
+/* & This will style the footer section of the webpage */
+.footer-img {
+    width: 125px;
+    height: 125px;
+    border: 5px solid #d5ffc0;
+    padding: 8px;
+}
+
+footer {
+    padding-bottom: 30px;
+}

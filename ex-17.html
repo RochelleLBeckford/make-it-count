@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- & Title of the webpage -->
+    <title>Content Box vs. Border Box</title>
+    <!-- & Link to the .css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- & Header
+    ~ The space near the top of the webpage that will make it easier to undestand and navigate
+    -->
+    <header class="flex-container">
+        <img
+            src="img/a-cherry-blossom-wind-chime.png"
+            alt="Cherry Blossom Wind Chime"
+            class="header-img"
+        >
+        <hr class="vertical-divider">
+        <h1>🌸 Make it Count 🌸</h1>
+        <hr class="vertical-divider">
+        <img
+            src="img/a-cherry-blossom-wind-chime.png"
+            alt="Cherry Blossom Wind Chime"
+            class="header-img"
+        >
+    </header>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Main
+    ~ This is where the main information of the webpage will go
+    -->
+    <main>
+        <!-- & Section
+        ~ This groups together similar pieces of the webpage
+        ~ i.e. This section will discuss the Content Box vs. The Border Box
+        -->
+        <section>
+            <h2>🍵 Content Box vs. Border Box 🍵</h2>
+            <hr class="title-divider">
+            <br>
+
+            <ul>
+                <li>
+                    By default, the width and height properties only focus on the content box, but if there is any padding around the content or a boarder, the entire element will appear wider on the page.
+                </li>
+                <li>
+                    The "box-sizing" property tells our website how to calculate the "width" and "height" properties of a given element.
+                </li>
+                <li>
+                    For instance, assuming there are two &lt;div&gt; division elements that are 150x150 pixels in size. One has an id of "content-box" and the other with an id of "border-box".
+                </li>
+                <ul>
+                    <li>
+                        If both have the same "width" and "padding" and "border" properties defined, but with a different "box-sizing" property:
+                        <ul>
+                            <li>
+                                <img
+                                    src="img/b-same-syntax-for-content-box-and-border-box.png"
+                                    alt="Same syntax for the content box and the border box"
+                                    width="275"
+                                >
+                            </li>
+                            <li>
+                                The rendered output of the content box and border box having the same syntax:
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="img/c-the-rendered-syntax.png"
+                                            alt="The rendered syntax"
+                                            width="400"
+                                        >
+                                    </li>
+                                    <li>
+                                        The default value is "content-box", which adds the "padding" and "border" values to the final "width" of the element.
+                                    </li>
+                                    <li>
+                                        However we can switch this to "border-box", and make it so that "padding" and "border" are included in the final "width", and the element maintains its expected size.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <li>
+                    In the element under "Border Box", the "padding" and "border" are factored in the content width. Therefore, the size of the content width. Therefore, the size of the content box will change to maintain that 150px width.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Footer
+    ~ This is where the important information will go that is not suitable for the <header> element
+        ~ Footnotes
+        ~ Links to extended resources
+            ~ In the <a> element -> use the following for the "href" attribute
+                ~ href = "/privacy"
+            ~ Also use the "target" attribute to open the link in a new web browser tab
+                ~ target = "_blank"
+            ~ Copyright information
+                ~ &copy; -> this is the symbol for copyright
+    -->
+    <footer class="flex-container">
+        <img
+            src="img/d-maiden-walks-through-the-bamboo-forest.png"
+            alt="Maiden walks through the bamboo forest"
+            class="footer-img"
+        >
+        <p>🌸 2025 EtariaL33. All rights reserved. 🌸</p>
+        <img
+            src="img/d-maiden-walks-through-the-bamboo-forest.png"
+            alt="Maiden walks through the bamboo forest"
+            class="footer-img"
+        >
+    </footer>
+</body>
+</html>
